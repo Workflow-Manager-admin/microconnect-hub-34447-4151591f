@@ -1,0 +1,88 @@
+.crisis-support {
+  background: var(--panel-bg);
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+  padding: 26px 30px;
+  margin-bottom: 26px;
+  min-height: 190px;
+}
+.crisis-support h2 {
+  margin-top: 0;
+  margin-bottom: 16px;
+  color: var(--danger);
+  font-weight: 700;
+  letter-spacing: 0.4px;
+}
+.crisis-add-form {
+  margin-bottom: 14px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.crisis-add-form input[type="text"] {
+  flex: 1 1 110px;
+  padding: 8px;
+  font-size: 1rem;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+}
+.crisis-add-form label {
+  font-size: 0.98rem;
+  color: var(--danger);
+  font-weight: 500;
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+.crisis-add-form input[type="checkbox"] {
+  margin-right: 3px;
+}
+.crisis-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.crisis-card {
+  padding: 8px 11px;
+  margin-bottom: 9px;
+  border-left: 4px solid var(--accent);
+  border-radius: 6px;
+  background: #fff;
+  color: var(--primary);
+  font-size: 1.04rem;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  position: relative;
+  box-shadow: 0 1px 2px #ececec;
+}
+.crisis-card:last-child {
+  margin-bottom: 0;
+}
+.crisis-card.urgent {
+  border-left-color: var(--danger);
+  background: #f5d3d0;
+}
+.crisis-flag {
+  color: #fff;
+  background: var(--danger);
+  border-radius: 3px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  padding: 2px 7px;
+  margin-left: 9px;
+}
+.crisis-type {
+  font-weight: 600;
+  color: var(--danger);
+}
+.crisis-msg {
+  color: var(--primary);
+}
+.crisis-meta {
+  margin-left: auto;
+  color: var(--accent);
+  font-size: 0.97em;
+}
