@@ -1,0 +1,76 @@
+.community-fund {
+  background: var(--panel-bg);
+  border-radius: 13px;
+  box-shadow: var(--shadow);
+  padding: 26px 29px;
+  margin-bottom: 26px;
+  min-height: 240px;
+}
+
+.community-fund h2 {
+  margin-top: 0;
+  margin-bottom: 18px;
+  color: var(--primary);
+  font-weight: 600;
+}
+.grant-add-form {
+  margin-bottom: 18px;
+  display: flex;
+  gap: 7px;
+  flex-wrap: wrap;
+}
+.grant-add-form input[type="text"],
+.grant-add-form input[type="number"] {
+  flex: 1 1 170px;
+  padding: 8px;
+  font-size: 1rem;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  min-width: 110px;
+}
+.grants-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.grant-card {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: #fff;
+  margin-bottom: 13px;
+  padding: 10px 14px 6px 16px;
+  box-shadow: 0 1px 3px #e8e8e2;
+}
+.grant-card:last-child {
+  margin-bottom: 0;
+}
+.grant-card h3 {
+  margin-top: 0;
+  margin-bottom: 7px;
+  font-weight: 500;
+  color: var(--accent);
+  font-size: 1.16rem;
+}
+.grant-status {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  font-size: 0.97rem;
+  margin-bottom: 6px;
+}
+.grant-open {
+  background: var(--warning);
+  color: var(--primary);
+  padding: 2px 9px;
+  border-radius: 4px;
+  font-weight: 500;
+}
+.grant-progress {
+  color: var(--primary);
+  font-weight: 600;
+}
+.grant-card p {
+  color: var(--text-secondary);
+  margin: 0;
+  font-size: 0.97rem;
+}
