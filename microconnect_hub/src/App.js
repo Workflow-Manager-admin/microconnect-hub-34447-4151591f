@@ -11,9 +11,9 @@ import AIAlerts from "./components/AIAlerts";
 // PUBLIC_INTERFACE
 function App() {
   // Application tab state
-  const [activeTab, setActiveTab] = useState("map");
+  const [activeTab, setActiveTab] = useState("dashboard");
 
-  // Placeholder: Example user state
+  // Example user state
   const user = {
     name: "Taylor Chen",
     verified: true,
@@ -28,32 +28,7 @@ function App() {
     ]
   };
 
-  // PUBLIC_INTERFACE
-  function renderTab() {
-    switch (activeTab) {
-      case "map":
-        return (
-          <>
-            <AIAlerts />
-            <MapDashboard user={user} />
-          </>
-        );
-      case "skills":
-        return <SkillExchange user={user} />;
-      case "resources":
-        return <ResourceExchange user={user} />;
-      case "fund":
-        return <CommunityFund user={user} />;
-      case "crisis":
-        return <CrisisSupport user={user} />;
-      case "profile":
-        return <UserProfile user={user} />;
-      default:
-        return null;
-    }
-  }
-
-  // Navigation feature list: 16 features mapped to keys, labels, and accessible emoji icons
+  // Navigation feature list: main features + minimal placeholders
   const navTabs = [
     { key: "dashboard", label: "Community Dashboard", icon: "🏠" },
     { key: "skills", label: "Skill Bartering System", icon: "🤝" },
@@ -75,7 +50,6 @@ function App() {
 
   // PUBLIC_INTERFACE
   function renderTab() {
-    // The only tabs with implemented screens are dashboard (show map & alerts), skills, resources, plus a few base features.
     switch (activeTab) {
       case "dashboard":
         return (
@@ -94,8 +68,8 @@ function App() {
         return <CrisisSupport user={user} />;
       case "profile":
         return <UserProfile user={user} />;
-      // Placeholder: Unimplemented features show a minimalist placeholder
-      default:
+      // Placeholder: All other tabs
+      default: {
         const current = navTabs.find(tab => tab.key === activeTab);
         return (
           <section style={{
@@ -115,42 +89,61 @@ function App() {
             </div>
           </section>
         );
+      }
     }
   }
 
+  // Layout: outer wrapper, header, sidebar left, main center, footer
   return (
-    <div className="hub-app">
-      <nav className="hub-navbar" role="navigation" aria-label="Main navigation">
+    <div className="hub-app-outer">
+      {/* Header (horizontal on top) */}
+      <header className="hub-header" role="banner">
         <span className="hub-logo">
           <span className="hub-logo-symbol" aria-hidden="true">*</span>
           MicroConnect Hub
         </span>
-        <div className="hub-nav-tabs" role="tablist">
-          {navTabs.map((tab, idx) => (
-            <button
-              className={`hub-nav-tab${activeTab === tab.key ? " active" : ""}`}
-              key={tab.key}
-              role="tab"
-              aria-selected={activeTab === tab.key}
-              tabIndex={0}
-              aria-label={tab.label}
-              onClick={() => setActiveTab(tab.key)}
-            >
-              <span aria-hidden="true">{tab.icon}</span>
-              <span style={{
-                whiteSpace: "nowrap",
-                textOverflow: "ellipsis",
-                overflow: "hidden",
-                maxWidth: 80,
-                display: "inline-block"
-              }}>{tab.label}</span>
-            </button>
-          ))}
-        </div>
-      </nav>
-      <main className="hub-main">
-        {renderTab()}
-      </main>
+        <span className="hub-header-user">
+          <span role="img" aria-label="avatar" className="hub-header-avatar">👤</span>
+          {user.name}
+        </span>
+      </header>
+      <div className="hub-layout-body">
+        {/* Sidebar nav (vertical, left) */}
+        <nav className="hub-sidebar" role="navigation" aria-label="Main navigation">
+          <ul className="hub-sidebar-list">
+            {navTabs.map(tab => (
+              <li key={tab.key}>
+                <button
+                  className={`hub-sidebar-tab${activeTab === tab.key ? " active" : ""}`}
+                  role="tab"
+                  aria-selected={activeTab === tab.key}
+                  tabIndex={0}
+                  aria-label={tab.label}
+                  onClick={() => setActiveTab(tab.key)}
+                >
+                  <span className="hub-sidebar-tab-icon" aria-hidden="true">{tab.icon}</span>
+                  <span className="hub-sidebar-tab-label">{tab.label}</span>
+                </button>
+              </li>
+            ))}
+          </ul>
+        </nav>
+        {/* Main content area */}
+        <main className="hub-main" tabIndex={-1}>
+          {renderTab()}
+        </main>
+      </div>
+      {/* Footer (horizontal, bottom) */}
+      <footer className="hub-footer" role="contentinfo">
+        <span>
+          &copy; {new Date().getFullYear()} MicroConnect Hub &middot; Hyper-local Community Exchange
+        </span>
+        <span className="hub-footer-links">
+          <a href="/" style={{ color: "var(--primary)" }}>Home</a>
+          <span style={{ margin: "0 5px" }}>|</span>
+          <a href="https://kavia.ai" target="_blank" rel="noopener noreferrer" style={{ color: "var(--secondary)" }}>Powered by Kavia</a>
+        </span>
+      </footer>
     </div>
   );
 }
