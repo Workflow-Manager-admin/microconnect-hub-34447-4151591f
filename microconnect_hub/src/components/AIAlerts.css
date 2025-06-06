@@ -1,0 +1,33 @@
+.ai-alerts {
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+.ai-alert-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: #f6edce;
+  color: var(--primary);
+  border-radius: 7px;
+  box-shadow: 0 1px 3px #e9e7c7;
+  font-size: 1.04rem;
+  padding: 10px 19px;
+  border-left: 4px solid var(--primary);
+  position: relative;
+}
+.ai-alert-card.urgent {
+  background: #ffd8c4;
+  border-left-color: var(--danger);
+  color: var(--danger);
+  font-weight: 700;
+}
+.ai-alert-type {
+  font-weight: 600;
+  color: var(--accent);
+  margin-right: 8px;
+}
+.ai-alert-message {
+  color: inherit;
+}
