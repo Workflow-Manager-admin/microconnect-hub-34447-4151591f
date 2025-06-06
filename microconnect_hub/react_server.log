@@ -371,3 +371,6 @@ ERROR in ./src/components/UserProfile.js 5:0-27
 Module not found: Error: Can't resolve './UserProfile.css' in '/home/kavia/workspace/code-generation/microconnect-hub-34447-4151591f/microconnect_hub/src/components'
 
 webpack compiled with 1 error
+Compiling...
+Compiled successfully!
+webpack compiled successfully
