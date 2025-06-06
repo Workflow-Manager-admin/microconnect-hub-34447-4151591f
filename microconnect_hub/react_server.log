@@ -18,3 +18,29 @@ Note that the development build is not optimized.
 To create a production build, use npm run build.
 
 webpack compiled successfully
+Compiling...
+Failed to compile.
+
+Module not found: Error: Can't resolve './components/MapDashboard' in '/home/kavia/workspace/code-generation/microconnect-hub-34447-4151591f/microconnect_hub/src'
+ERROR in ./src/App.js 7:0-53
+Module not found: Error: Can't resolve './components/MapDashboard' in '/home/kavia/workspace/code-generation/microconnect-hub-34447-4151591f/microconnect_hub/src'
+
+ERROR in ./src/App.js 8:0-55
+Module not found: Error: Can't resolve './components/SkillExchange' in '/home/kavia/workspace/code-generation/microconnect-hub-34447-4151591f/microconnect_hub/src'
+
+ERROR in ./src/App.js 9:0-61
+Module not found: Error: Can't resolve './components/ResourceExchange' in '/home/kavia/workspace/code-generation/microconnect-hub-34447-4151591f/microconnect_hub/src'
+
+ERROR in ./src/App.js 10:0-55
+Module not found: Error: Can't resolve './components/CommunityFund' in '/home/kavia/workspace/code-generation/microconnect-hub-34447-4151591f/microconnect_hub/src'
+
+ERROR in ./src/App.js 11:0-55
+Module not found: Error: Can't resolve './components/CrisisSupport' in '/home/kavia/workspace/code-generation/microconnect-hub-34447-4151591f/microconnect_hub/src'
+
+ERROR in ./src/App.js 12:0-51
+Module not found: Error: Can't resolve './components/UserProfile' in '/home/kavia/workspace/code-generation/microconnect-hub-34447-4151591f/microconnect_hub/src'
+
+ERROR in ./src/App.js 13:0-45
+Module not found: Error: Can't resolve './components/AIAlerts' in '/home/kavia/workspace/code-generation/microconnect-hub-34447-4151591f/microconnect_hub/src'
+
+webpack compiled with 7 errors
