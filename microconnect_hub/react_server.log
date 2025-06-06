@@ -200,3 +200,55 @@ ERROR in ./src/components/SkillExchange.js 6:0-29
 Module not found: Error: Can't resolve './SkillExchange.css' in '/home/kavia/workspace/code-generation/microconnect-hub-34447-4151591f/microconnect_hub/src/components'
 
 webpack compiled with 7 errors
+Compiling...
+Failed to compile.
+
+Module not found: Error: Can't resolve './AIAlerts.css' in '/home/kavia/workspace/code-generation/microconnect-hub-34447-4151591f/microconnect_hub/src/components'
+ERROR in ./src/components/AIAlerts.js 5:0-24
+Module not found: Error: Can't resolve './AIAlerts.css' in '/home/kavia/workspace/code-generation/microconnect-hub-34447-4151591f/microconnect_hub/src/components'
+
+ERROR in ./src/components/CommunityFund.js 6:0-29
+Module not found: Error: Can't resolve './CommunityFund.css' in '/home/kavia/workspace/code-generation/microconnect-hub-34447-4151591f/microconnect_hub/src/components'
+
+ERROR in ./src/components/CrisisSupport.js 6:0-29
+Module not found: Error: Can't resolve './CrisisSupport.css' in '/home/kavia/workspace/code-generation/microconnect-hub-34447-4151591f/microconnect_hub/src/components'
+
+ERROR in ./src/components/MapDashboard.js 5:0-28
+Module not found: Error: Can't resolve './MapDashboard.css' in '/home/kavia/workspace/code-generation/microconnect-hub-34447-4151591f/microconnect_hub/src/components'
+
+ERROR in ./src/components/ResourceExchange.js 6:0-32
+Module not found: Error: Can't resolve './ResourceExchange.css' in '/home/kavia/workspace/code-generation/microconnect-hub-34447-4151591f/microconnect_hub/src/components'
+
+ERROR in ./src/components/SkillExchange.js 6:0-29
+Module not found: Error: Can't resolve './SkillExchange.css' in '/home/kavia/workspace/code-generation/microconnect-hub-34447-4151591f/microconnect_hub/src/components'
+
+ERROR in ./src/components/UserProfile.js 5:0-27
+Module not found: Error: Can't resolve './UserProfile.css' in '/home/kavia/workspace/code-generation/microconnect-hub-34447-4151591f/microconnect_hub/src/components'
+
+webpack compiled with 7 errors
+Compiling...
+Failed to compile.
+
+Module not found: Error: Can't resolve './AIAlerts.css' in '/home/kavia/workspace/code-generation/microconnect-hub-34447-4151591f/microconnect_hub/src/components'
+ERROR in ./src/components/AIAlerts.js 5:0-24
+Module not found: Error: Can't resolve './AIAlerts.css' in '/home/kavia/workspace/code-generation/microconnect-hub-34447-4151591f/microconnect_hub/src/components'
+
+ERROR in ./src/components/CommunityFund.js 6:0-29
+Module not found: Error: Can't resolve './CommunityFund.css' in '/home/kavia/workspace/code-generation/microconnect-hub-34447-4151591f/microconnect_hub/src/components'
+
+ERROR in ./src/components/CrisisSupport.js 6:0-29
+Module not found: Error: Can't resolve './CrisisSupport.css' in '/home/kavia/workspace/code-generation/microconnect-hub-34447-4151591f/microconnect_hub/src/components'
+
+ERROR in ./src/components/MapDashboard.js 5:0-28
+Module not found: Error: Can't resolve './MapDashboard.css' in '/home/kavia/workspace/code-generation/microconnect-hub-34447-4151591f/microconnect_hub/src/components'
+
+ERROR in ./src/components/ResourceExchange.js 6:0-32
+Module not found: Error: Can't resolve './ResourceExchange.css' in '/home/kavia/workspace/code-generation/microconnect-hub-34447-4151591f/microconnect_hub/src/components'
+
+ERROR in ./src/components/SkillExchange.js 6:0-29
+Module not found: Error: Can't resolve './SkillExchange.css' in '/home/kavia/workspace/code-generation/microconnect-hub-34447-4151591f/microconnect_hub/src/components'
+
+ERROR in ./src/components/UserProfile.js 5:0-27
+Module not found: Error: Can't resolve './UserProfile.css' in '/home/kavia/workspace/code-generation/microconnect-hub-34447-4151591f/microconnect_hub/src/components'
+
+webpack compiled with 7 errors
