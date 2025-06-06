@@ -1,0 +1,78 @@
+.map-dashboard {
+  background: var(--panel-bg);
+  border-radius: 15px;
+  box-shadow: var(--shadow);
+  padding: 30px 36px 24px 36px;
+  margin-bottom: 26px;
+  min-height: 360px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.map-header {
+  display: flex;
+  gap: 11px;
+  align-items: center;
+  margin-bottom: 18px;
+}
+.community-title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0;
+  color: var(--primary);
+}
+.tag-geofence {
+  background: var(--primary);
+  color: #fff;
+  border-radius: 6px;
+  font-size: 1rem;
+  padding: 1px 10px 2px 10px;
+  font-weight: 500;
+  margin-top: 1.5px;
+  letter-spacing: 0.3px;
+}
+.map-view {
+  width: 100%;
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+.mock-map {
+  width: 230px;
+  height: 150px;
+  background: #fffbe6;
+  border: 1.5px solid var(--primary);
+  border-radius: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 22px;
+}
+.map-community-info {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.map-community-info ul {
+  margin: 3px 0 0 0;
+  padding-left: 20px;
+}
+.map-community-info li {
+  margin-bottom: 2px;
+}
+.trust-rating {
+  color: var(--accent);
+  font-weight: 600;
+  margin-left: 8px;
+  font-size: 1.07rem;
+}
+.map-instructions {
+  font-size: 0.97rem;
+  color: var(--secondary);
+  margin-top: 18px;
+  margin-bottom: 0;
+}
