@@ -1,0 +1,4 @@
+{
+    "command": "PORT=<port> BROWSER=none npm start",
+    "working_directory": "/home/kavia/workspace/code-generation/microconnect-microconnect-hub-34447-4151591f-35671/microconnect_hub"
+}
